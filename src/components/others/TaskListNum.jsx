@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TaskList = () => {
+export const TaskListNum = () => {
   return (
     <div className='flex mt-10 px-11 py-4 justify-between gap-5 screen'>
         <div className='rounded-xl hover:scale-105 hover:bg-red-500 transition-transform duration-200 w-[40%] bg-red-400 px-9 py-6 shadow-md'>
@@ -23,4 +23,4 @@ export const TaskList = () => {
   )
 }
 
-export default TaskList
+export default TaskListNum
