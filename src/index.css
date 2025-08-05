@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 *{
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
   color: #fff;
 }
 
@@ -14,3 +14,12 @@ body {
 #TaskList::-webkit-scrollbar {
   display: none;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+ } 
