@@ -10,14 +10,22 @@ import { AuthContext } from './context/AuthProvider'
 const App = () => {
 
   const [user, setUser] = useState(null)
-   const AuthData = useContext(AuthContext)
+  const [LoggedInUserData, setLoggedInUserData] = useState(null)
+  const AuthData = useContext(AuthContext)
   
 
   const handleLogin = (email , password) => {
     if (email == 'admin@me.com' && password == '123') {
       setUser('admin')
-    }else if (AuthData && AuthData.employees.find((emp) => emp.email === email && emp.password === password)) {
-      setUser('user')
+      localStorage.setItem('loggedInuser', JSON.stringify({ role: 'admin'}))
+    }else if (AuthData) {
+      const employee = AuthData.employees.find((emp) => emp.email === email && emp.password === password)
+      if (employee) {
+        setUser('user')
+        setLoggedInUserData(employee)
+        localStorage.setItem('loggedInuser', JSON.stringify({ role:'employee' }))
+      }
+      
     }else {
       alert('Invalid credentials')
     }
@@ -30,7 +38,7 @@ const App = () => {
     <>
     {!user ? <Login handleLogin={handleLogin}/> : ''} 
     {user === 'admin' ? <AdminDashboard /> : ''}
-    {user === 'user' ? <EmployeeDashboard /> : ''}
+    {user === 'user' ? <EmployeeDashboard data={LoggedInUserData} /> : ''}
     </> 
   )
 }
