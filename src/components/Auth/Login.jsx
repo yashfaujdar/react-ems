@@ -6,7 +6,6 @@ const Login = ({handleLogin}) => {
   const [password, setPassword] = useState('')
   const sumbitHandler = (e) => {
     e.preventDefault()
-    // console.log("your email is", email, "and your password is", password)
     handleLogin(email, password)
     setEmail('')
     setPassword('')
