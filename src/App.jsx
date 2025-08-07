@@ -12,6 +12,17 @@ const App = () => {
   const [user, setUser] = useState(null)
   const [LoggedInUserData, setLoggedInUserData] = useState(null)
   const AuthData = useContext(AuthContext)
+
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem('loggedInuser')
+  
+    if (loggedInUser) {
+      const userData = JSON.parse(loggedInUser)
+      setUser(userData.role)
+      setLoggedInUserData(userData.data)
+   }
+  }, [])
+  
   
 
   const handleLogin = (email , password) => {
