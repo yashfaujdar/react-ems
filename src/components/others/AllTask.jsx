@@ -8,11 +8,11 @@ const AllTask = () => {
     <div className='bg-[#1c1c1c] mt-7 p-5 px-10 py-3 h-80 rounded'>
     
       <div className='bg-red-400 py-4 px-5 flex justify-between rounded sticky top-0'>
-        <h2 className='w-1/5 text-black '>Employee Name</h2>
-        <h3 className='w-1/5 text-black '>New Task</h3>
-        <h5 className='w-1/5 text-black '>Active</h5>
-        <h5 className='w-1/5 text-black '>Completed</h5>
-        <h5 className='w-1/5 text-black '>Failed</h5>
+        <h2 className='text-lg font-medium w-1/5 text-black '>Employee Name</h2>
+        <h3 className='text-lg font-medium w-1/5 text-black '>New Task</h3>
+        <h5 className='text-lg font-medium w-1/5 text-black '>Active</h5>
+        <h5 className='text-lg font-medium w-1/5 text-black '>Completed</h5>
+        <h5 className='text-lg font-medium w-1/5 text-black '>Failed</h5>
       </div>
 
       
