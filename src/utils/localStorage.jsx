@@ -6,8 +6,8 @@ const employees = [
       "firstName": "Vivaan",
       "tasks": [
         {
-          "taskTitle": "Task 1",
-          "taskDescription": "Description for task 1",
+          "taskTitle": "Prepare Project Report",
+          "taskDescription": "Compile and finalize the project documentation for client submission.",
           "activeTask": true,
           "newTask": false,
           "completed": false,
@@ -17,8 +17,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 2",
-          "taskDescription": "Description for task 2",
+          "taskTitle": "Update API Documentation",
+          "taskDescription": "Revise API docs to reflect recent feature updates.",
           "activeTask": true,
           "newTask": false,
           "completed": false,
@@ -28,8 +28,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 3",
-          "taskDescription": "Description for task 3",
+          "taskTitle": "Wireframe New Dashboard",
+          "taskDescription": "Create wireframes for the new analytics dashboard.",
           "activeTask": false,
           "newTask": true,
           "completed": true,
@@ -39,8 +39,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 4",
-          "taskDescription": "Description for task 4",
+          "taskTitle": "Redesign Landing Page",
+          "taskDescription": "Enhance UI of the landing page for better user engagement.",
           "activeTask": true,
           "newTask": true,
           "completed": false,
@@ -50,8 +50,8 @@ const employees = [
           "priority": "Low"
         },
         {
-          "taskTitle": "Task 5",
-          "taskDescription": "Description for task 5",
+          "taskTitle": "Bug Testing on Mobile",
+          "taskDescription": "Test the app on multiple mobile devices for critical bugs.",
           "activeTask": true,
           "newTask": false,
           "completed": false,
@@ -75,8 +75,8 @@ const employees = [
       "firstName": "Diya",
       "tasks": [
         {
-          "taskTitle": "Task 1",
-          "taskDescription": "Description for task 1",
+          "taskTitle": "Organize Meeting Notes",
+          "taskDescription": "Summarize and organize the notes from last client meeting.",
           "activeTask": true,
           "newTask": false,
           "completed": true,
@@ -86,8 +86,8 @@ const employees = [
           "priority": "Low"
         },
         {
-          "taskTitle": "Task 2",
-          "taskDescription": "Description for task 2",
+          "taskTitle": "Test Payment Gateway",
+          "taskDescription": "Run multiple test cases for the payment gateway integration.",
           "activeTask": true,
           "newTask": true,
           "completed": true,
@@ -97,8 +97,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 3",
-          "taskDescription": "Description for task 3",
+          "taskTitle": "Debug Checkout Page",
+          "taskDescription": "Identify and fix issues in the checkout page flow.",
           "activeTask": false,
           "newTask": false,
           "completed": false,
@@ -108,8 +108,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 4",
-          "taskDescription": "Description for task 4",
+          "taskTitle": "Develop User Login Feature",
+          "taskDescription": "Implement secure user authentication with OAuth.",
           "activeTask": false,
           "newTask": true,
           "completed": false,
@@ -119,8 +119,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 5",
-          "taskDescription": "Description for task 5",
+          "taskTitle": "Proofread Knowledge Base",
+          "taskDescription": "Check the company knowledge base articles for grammar and accuracy.",
           "activeTask": false,
           "newTask": false,
           "completed": false,
@@ -144,8 +144,8 @@ const employees = [
       "firstName": "Ananya",
       "tasks": [
         {
-          "taskTitle": "Task 1",
-          "taskDescription": "Description for task 1",
+          "taskTitle": "Backend API Optimization",
+          "taskDescription": "Improve API response time by optimizing database queries.",
           "activeTask": false,
           "newTask": false,
           "completed": false,
@@ -155,8 +155,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 2",
-          "taskDescription": "Description for task 2",
+          "taskTitle": "Implement Search Feature",
+          "taskDescription": "Add a full-text search feature for the product catalog.",
           "activeTask": false,
           "newTask": false,
           "completed": true,
@@ -166,8 +166,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 3",
-          "taskDescription": "Description for task 3",
+          "taskTitle": "Regression Testing",
+          "taskDescription": "Run regression tests to ensure existing features work after updates.",
           "activeTask": false,
           "newTask": true,
           "completed": true,
@@ -177,8 +177,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 4",
-          "taskDescription": "Description for task 4",
+          "taskTitle": "Refactor Authentication Module",
+          "taskDescription": "Clean up and improve authentication module for better maintainability.",
           "activeTask": false,
           "newTask": true,
           "completed": false,
@@ -188,8 +188,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 5",
-          "taskDescription": "Description for task 5",
+          "taskTitle": "Prepare Deployment Scripts",
+          "taskDescription": "Write scripts to automate the deployment process.",
           "activeTask": false,
           "newTask": true,
           "completed": false,
@@ -199,8 +199,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 6",
-          "taskDescription": "Description for task 6",
+          "taskTitle": "Create Onboarding Guide",
+          "taskDescription": "Draft a step-by-step guide for onboarding new developers.",
           "activeTask": false,
           "newTask": false,
           "completed": true,
@@ -210,8 +210,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 7",
-          "taskDescription": "Description for task 7",
+          "taskTitle": "Server Configuration Update",
+          "taskDescription": "Update the server configurations for security patches.",
           "activeTask": false,
           "newTask": false,
           "completed": true,
@@ -221,8 +221,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 8",
-          "taskDescription": "Description for task 8",
+          "taskTitle": "Deploy New Version",
+          "taskDescription": "Deploy the latest version of the application to production.",
           "activeTask": true,
           "newTask": true,
           "completed": true,
@@ -232,8 +232,8 @@ const employees = [
           "priority": "Low"
         },
         {
-          "taskTitle": "Task 9",
-          "taskDescription": "Description for task 9",
+          "taskTitle": "UI Component Redesign",
+          "taskDescription": "Update UI components to match the latest brand guidelines.",
           "activeTask": false,
           "newTask": false,
           "completed": false,
@@ -257,8 +257,8 @@ const employees = [
       "firstName": "Kabir",
       "tasks": [
         {
-          "taskTitle": "Task 1",
-          "taskDescription": "Description for task 1",
+          "taskTitle": "Fix Login Bug",
+          "taskDescription": "Resolve the issue preventing users from logging in.",
           "activeTask": true,
           "newTask": false,
           "completed": true,
@@ -268,8 +268,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 2",
-          "taskDescription": "Description for task 2",
+          "taskTitle": "Create API Reference",
+          "taskDescription": "Prepare an API reference document for developers.",
           "activeTask": true,
           "newTask": false,
           "completed": true,
@@ -279,8 +279,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 3",
-          "taskDescription": "Description for task 3",
+          "taskTitle": "Migrate Database",
+          "taskDescription": "Move the existing database to a new cloud provider.",
           "activeTask": true,
           "newTask": true,
           "completed": true,
@@ -290,8 +290,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 4",
-          "taskDescription": "Description for task 4",
+          "taskTitle": "Add Dark Mode",
+          "taskDescription": "Implement dark mode feature for the web app.",
           "activeTask": true,
           "newTask": false,
           "completed": false,
@@ -301,8 +301,8 @@ const employees = [
           "priority": "Low"
         },
         {
-          "taskTitle": "Task 5",
-          "taskDescription": "Description for task 5",
+          "taskTitle": "Update README",
+          "taskDescription": "Revise the project README file with latest setup instructions.",
           "activeTask": true,
           "newTask": false,
           "completed": true,
@@ -312,8 +312,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 6",
-          "taskDescription": "Description for task 6",
+          "taskTitle": "Load Testing",
+          "taskDescription": "Perform load testing to check server performance under stress.",
           "activeTask": true,
           "newTask": true,
           "completed": false,
@@ -323,8 +323,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 7",
-          "taskDescription": "Description for task 7",
+          "taskTitle": "Server Deployment",
+          "taskDescription": "Deploy the application to staging servers for testing.",
           "activeTask": true,
           "newTask": false,
           "completed": false,
@@ -348,8 +348,8 @@ const employees = [
       "firstName": "Rohan",
       "tasks": [
         {
-          "taskTitle": "Task 1",
-          "taskDescription": "Description for task 1",
+          "taskTitle": "Monitor Server Logs",
+          "taskDescription": "Check server logs for errors and unusual activities.",
           "activeTask": true,
           "newTask": false,
           "completed": true,
@@ -359,8 +359,8 @@ const employees = [
           "priority": "Low"
         },
         {
-          "taskTitle": "Task 2",
-          "taskDescription": "Description for task 2",
+          "taskTitle": "Cross-Browser Testing",
+          "taskDescription": "Test the application across different browsers for compatibility.",
           "activeTask": true,
           "newTask": false,
           "completed": true,
@@ -370,8 +370,8 @@ const employees = [
           "priority": "Medium"
         },
         {
-          "taskTitle": "Task 3",
-          "taskDescription": "Description for task 3",
+          "taskTitle": "Update Policy Documents",
+          "taskDescription": "Revise company policy documents with the latest guidelines.",
           "activeTask": false,
           "newTask": true,
           "completed": true,
@@ -381,8 +381,8 @@ const employees = [
           "priority": "High"
         },
         {
-          "taskTitle": "Task 4",
-          "taskDescription": "Description for task 4",
+          "taskTitle": "Design Newsletter",
+          "taskDescription": "Create a visually appealing layout for the monthly newsletter.",
           "activeTask": false,
           "newTask": false,
           "completed": false,
@@ -400,6 +400,7 @@ const employees = [
       }
     }
   ];
+
 
 
 const admin =  [{

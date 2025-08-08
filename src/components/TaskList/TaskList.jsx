@@ -5,21 +5,21 @@ import NewTask from './NewTask'
 import CompletedTask from './CompletedTask'
 
 const TaskList = ({data}) => {
-    console.log(data);
+    // console.log(data);
   return (
     <div id='TaskList' className='h-[60vh] w-full max-w-[95%] mx-auto flex items-center mt-10 px-2 overflow-x-auto flex-nowrap gap-6 justify-start py-6'>
         {data.tasks.map((elem , idx) => {
             if(elem.activeTask) {
-                return <AcceptTask key={idx}/>
+                return <AcceptTask key={idx} data = {elem}/>
             }
             if(elem.failed) {
-                return <FailedTask key={idx}/>
+                return <FailedTask key={idx} data = {elem}/>
             }
             if(elem.newTask) {
-                return <NewTask key={idx}/>
+                return <NewTask key={idx} data = {elem}/>
             }
             if(elem.completed) {
-                return <CompletedTask key={idx}/>
+                return <CompletedTask key={idx} data = {elem}/>
             }
         })}
 
