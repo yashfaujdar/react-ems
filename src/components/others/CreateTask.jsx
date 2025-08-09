@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { AuthContext } from '../../context/AuthProvider'
 
 const CreateTask = () => {
     const [taskTitle, setTaskTitle] = useState('')
@@ -8,32 +8,70 @@ const CreateTask = () => {
     const [assignTo, setAssignTo] = useState('')
     const [category, setCategory] = useState('')
     const [description, setDescription] = useState('')
-
-    const [newTask, setNewTask] = useState({})
+    const AuthData = useContext(AuthContext)
 
     const submitHandler = (e) => {
         e.preventDefault()
-        setNewTask({taskTitle, taskDate, taskPriority, category, description, activeTask: false, failed: false, completed: false, newTask:true})
         
-        const data = JSON.parse(localStorage.getItem('employees')) || []
+        // Validate inputs
+        if (!taskTitle || !taskDate || !assignTo || !category || !description) {
+            alert('Please fill all fields')
+            return
+        }
 
-        data.forEach(function(elem) {
-            if (elem.firstName === assignTo) {
-                elem.tasks.push(newTask)
-                console.log(elem)
+        // Create task object
+        const taskData = {
+            taskTitle,
+            taskDescription: description,
+            taskDate,
+            category,
+            priority: taskPriority,
+            activeTask: false,
+            failed: false,
+            completed: false,
+            newTask: true
+        }
+
+        // Get and update employees data
+        const currentEmployees = AuthData.employees
+        const employeeExists = currentEmployees.some(emp => emp.firstName === assignTo)
+
+        if (!employeeExists) {
+            alert('Employee not found!')
+            return
+        }
+
+        const updatedEmployees = currentEmployees.map(employee => {
+            if (employee.firstName === assignTo) {
+                return {
+                    ...employee,
+                    tasks: [...employee.tasks, taskData],
+                    taskNumber: {
+                        ...employee.taskNumber,
+                        new: employee.taskNumber.new + 1
+                    }
+                }
             }
+            return employee
         })
-        setAssignTo('')
-        setCategory('')
-        setDescription('')
+
+        // Use the context update function instead of directly setting localStorage
+        AuthData.updateEmployees(updatedEmployees)
+        
+        // Reset form
         setTaskTitle('')
         setTaskDate('')
         setTaskPriority('low')
+        setAssignTo('')
+        setCategory('')
+        setDescription('')
 
-        localStorage.setItem('employees', JSON.stringify(data))
+        // Show success message
+        alert('Task created successfully!')
     }
-  return (
-    <div className='bg-[#1c1c1c] mt-7 rounded px-10 py-5'>
+
+    return (
+        <div className='bg-[#1c1c1c] mt-7 rounded px-10 py-5'>
             <form onSubmit={(e) => {
                 submitHandler(e)
             }} className='flex flex-wrap w-full gap-4'>
@@ -101,7 +139,7 @@ const CreateTask = () => {
                 </div>
             </form>
         </div>
-  )
+    )
 }
 
 export default CreateTask
