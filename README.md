@@ -1,12 +1,23 @@
-# React + Vite
+Employee Management System (EMS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based task management system that enables administrators to assign and track employee tasks efficiently. Built with React and TailwindCSS, featuring:
 
-Currently, two official plugins are available:
+- 🔐 Secure authentication for admin and employee roles
+- 📋 Task creation and assignment functionality
+- 📊 Real-time task status tracking (New, Active, Completed, Failed)
+- 💾 Persistent storage using localStorage
+- 🎨 Clean, responsive UI with dark mode
+- 📱 Mobile-friendly design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dashboard:
+- Admin dashboard for task creation and monitoring
+- Employee dashboard for task updates
+- Real-time task status tracking
 
-## Expanding the ESLint configuration
+Tech Stack:
+- React
+- TailwindCSS
+- Context API for state management
+- LocalStorage for data persistence
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Perfect for small to medium-sized teams looking for a lightweight task management solution.
